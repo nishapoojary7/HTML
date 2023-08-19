@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> program 9b</title>
+<script>
+	function validate()
+	{
+	var pattern =/[1-8]$/;
+	sem=document.getElementById("sem");
+	if(!sem.value.match(pattern  ))
+		alert("Invalid  sem");
+	else
+		alert("valid sem");
+	}
+</script>
+<style>
+ h1{ 
+    color:black;
+	border:5px solid grey;
+	border-radius:20px;
+	background-color: #ffddca;
+	}
+div
+{
+    width:700px;
+	margin:0 auto;
+	padding:20px;
+	background-color:#e4007c;
+	border-radius:15px;
+	}
+table{
+	border-spacing:10px;
+	}
+</style>
+</head>
+<body bgcolor="#8fbc8f">
+<center>
+<br>
+<br>
+<h1> STUDENT DETAILS </h1> </center>
+<br>
+<div>
+<form>
+<table>
+<tr>
+<th> ENTER THE NAME :</th>
+<td> <input type="text" id="name" >
+</td>
+</tr>
+
+<tr>
+<th> ENTER USN:</th>
+<td> <input type="text" id="usn" >
+</td> </tr>
+
+<tr>
+<th> ENTER sem:</th>
+<td> <input type="text" id="sem" >
+</td> </tr>
+
+<tr>
+<td><input type="submit" value="CHECK sem" onclick="validate()">
+</div>
+</table>
+</form>
+</body>
+</html>
